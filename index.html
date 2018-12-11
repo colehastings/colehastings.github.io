@@ -39,7 +39,34 @@
 		<script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
 	<div id = "slider-wrapper">
 		<section class = "slider">
-			<a href="https://ibb.co/BKT4Wv8"><img src="https://i.ibb.co/Pz1TXJB/video-2.png" alt="video-2" border="0" /></a>
+			<ul class = "slider1">
+				<li><a href="https://ibb.co/BKT4Wv8"><img src="https://i.ibb.co/Pz1TXJB/video-2.png" alt="video-2" border="0" /></a></li>
+
+			</ul>
+		<script type="text/javascript">
+			$('.slider1').bxSlider({
+				mode: 'fade',
+				captions: false,
+				auto:true,
+				pager:false,
+				
+			});
+			$('.slider2').bxSlider({
+				pager:false,
+				captions: true,
+				maxSlides: 3,
+				minSlides: 1,
+				slideWidth: 230,
+				slideMargin: 10
+			});
+			$('.slider3').bxSlider({
+				mode: 'fade',
+				captions: false,
+				auto:true,
+				pager:false,
+				controls:false,
+			});
+		</script>
 			</section>
 
 
